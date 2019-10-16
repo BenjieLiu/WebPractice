@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>鼠标跟随</title>
+    <!-- //需求：点击页面的任何地方，图片跟随鼠标移动到点击位置。
+    //思路：获取鼠标在页面中的位置，然图片缓慢运动到鼠标点击的位置。
+    //  兼容ie67做pageY和pageX；
+    //  原理：     鼠标在页面的位置 = 被卷去的部分+可视区域部分。
+    //步骤：
+    //1.老三步。
+    //2.获取鼠标在页面中的位置。
+    //3.利用缓动原理，慢慢的运动到指定位置。（包括左右和上下） -->
+    <style>
+        div {
+
+            width: 20px;
+
+            height: 20px;
+
+            background: red;
+
+            position: absolute
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div></div>
+
+    <div></div>
+
+    <div></div>
+
+    <div></div>
+
+    <div></div>
+
+    <div></div>
+
+    <div></div>
+
+    <div></div>
+
+    <div></div>
+
+    <div></div>
+    <script src="Event.js"></script>
+
+</body>
+
+</html>
